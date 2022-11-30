@@ -1,0 +1,28 @@
+@import url(index.css);
+/*variables*/
+/*variables*/
+/*mixins*/
+/*mixins*/
+.cards-wrapper {
+  display: flex;
+}
+
+.control {
+  width: 90%;
+  justify-content: end;
+}
+
+.w-5 {
+  width: 5%;
+}
+
+.h-5 {
+  height: 5%;
+}
+
+.rotar {
+  rotate: -10deg;
+  font-size: 100px !important;
+}
+
+/*# sourceMappingURL=index.css.map */

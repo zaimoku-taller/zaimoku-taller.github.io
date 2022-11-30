@@ -1,0 +1,281 @@
+@import url(index.css);
+@import url(show.css);
+/*variables*/
+$tipografia-proyecto: 'Roboto', sans-serif;
+$fondo-proyecto: #FFFFFF;
+$fondo-secundario-proyecto: #D2320E;
+$color-principal-proyecto: #990D00;
+$color-secundario-proyecto: #331C17;
+$letras-proyecto: #FFFFFF;
+$letras-secundario-proyecto: #fff3dc;
+
+        
+/*variables*/
+
+/*mixins*/
+@mixin heading-1 {
+    font-family: $tipografia-proyecto;
+    font-size: 48px;
+    line-height: 58px;
+    font-weight: bold;
+    letter-spacing: 0px;
+}
+
+@mixin heading-2 {
+    font-family: $tipografia-proyecto;
+    font-size: 40px;
+    line-height: 49px;
+    font-weight: bold;
+    letter-spacing: 0px;
+}
+
+@mixin heading-3 {
+    font-family: $tipografia-proyecto;
+    font-size: 32px;
+    line-height: 39px;
+    font-weight: bold;
+    letter-spacing: 0px;
+}
+
+@mixin heading-4 {
+    font-family: $tipografia-proyecto;
+    font-size: 28px;
+    line-height: 34px;
+    font-weight: bold;
+    letter-spacing: 0px;
+}
+
+@mixin heading-5 {
+    font-family: $tipografia-proyecto;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: bold;
+    letter-spacing: 0px;
+}
+
+@mixin heading-6 {
+    font-family: $tipografia-proyecto;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: bold;
+    letter-spacing: 0px;
+}
+
+@mixin parrafo {
+    font-family: $tipografia-proyecto;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 400;
+    letter-spacing: 0px;
+}
+
+@mixin enlace {
+    color: $color-principal-proyecto;
+    font-family: $tipografia-proyecto;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+    letter-spacing: 0px;
+}
+
+/*mixins*/
+
+/*tamaño fuentes*/
+h1 {
+    @include heading-1;
+}
+
+.h1 {
+    @include heading-1;
+}
+
+h2 {
+    @include heading-2;
+}
+
+.h2 {
+    @include heading-2;
+}
+
+h3 {
+    @include heading-3;
+}
+
+.h3 {
+    @include heading-3;
+}
+
+h4 {
+    @include heading-4;
+}
+
+.h4 {
+    @include heading-4;
+}
+
+h5 {
+    @include heading-5;
+}
+
+.h5 {
+    @include heading-5;
+}
+
+h6 {
+    @include heading-6;
+}
+
+.h6 {
+    @include heading-6;
+}
+
+p {
+    @include parrafo;
+}
+
+a {
+    @include enlace;
+}
+
+a:hover {
+    color: #D2320E;
+}
+
+/*tamaño fuentes*/
+body {
+    color: $color-secundario-proyecto;
+    background-color: $fondo-proyecto;
+}
+header{
+    .navbar-toggler{
+        border: $color-secundario-proyecto 2px solid;
+        cursor: pointer;
+    }
+    .navbar-toggler:hover{
+        background-color: $fondo-secundario-proyecto;
+    }
+    .bg-light{
+        background-color: $letras-secundario-proyecto !important;
+    }
+}
+
+
+.offcanvas {
+    background-color: $fondo-secundario-proyecto;
+
+    .offcanvas-header {
+        a {
+            color: $letras-proyecto !important;
+        }
+
+        .btn-close {
+            background-color: $letras-proyecto !important;
+        }
+    }
+
+    .offcanvas-body {
+        li {
+            .nav-link {
+                color: $letras-proyecto !important;
+            }
+
+            .nav-link:hover {
+                color: $letras-secundario-proyecto !important;
+            }
+
+            .nav-link:focus {
+                color: $letras-secundario-proyecto !important;
+            }
+
+            .dropdown-item {
+                color: $color-secundario-proyecto;
+            }
+            .dropdown-item:hover{
+                background-color: $letras-secundario-proyecto;
+            }
+        }
+
+    }
+}
+.carousel-indicators{
+    a{
+        background-color: $fondo-proyecto !important;
+    }
+}
+footer {
+    color: $letras-proyecto;
+    background-color: $fondo-secundario-proyecto;
+
+    a {
+        color: $letras-proyecto;
+    }
+
+    a:hover {
+        color: $letras-secundario-proyecto;
+    }
+    .icono:hover {
+        background-color: $fondo-proyecto;
+
+        .fa-brands {
+            color: $color-secundario-proyecto;
+        }
+    }
+
+}
+.card{
+    border: $color-secundario-proyecto 1px solid;
+}
+/*botones*/
+.btn-primary {
+    background-color: $color-principal-proyecto;
+    color: $letras-proyecto;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: $fondo-secundario-proyecto;
+}
+
+.btn-secondary {
+    background-color: $color-secundario-proyecto;
+    color: $letras-proyecto;
+    border: none;
+}
+
+.btn-secondary:hover {
+    background-color: $color-principal-proyecto;
+}
+
+.icono {
+    background-color: $color-secundario-proyecto;
+    width: 50px;
+    height: 50px;
+    
+    .fa-brands {
+        color: $letras-proyecto;
+        font-size: 20px;
+    }
+}
+
+.icono:hover {
+    background-color: $fondo-secundario-proyecto;
+}
+
+/*botones*/
+.accordion-button{
+    background-color: $color-principal-proyecto;
+    color: $letras-proyecto;
+}
+.accordion-button::after{
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{white}'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
+}
+.accordion-button:not(.collapsed){
+    background-color: $fondo-secundario-proyecto;
+    color: $letras-proyecto;
+}
+.accordion-button:not(.collapsed)::after{
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{white}'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
+}
+.accordion-body{
+    border: $fondo-secundario-proyecto 1px solid;
+}
