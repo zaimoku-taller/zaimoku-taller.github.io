@@ -11,28 +11,30 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/8dcbdfedb3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" media="(max-width: 768px)" href="assets/css/style.css">
 </head>
 
 <body>
     <!--Escribir aquí-->
     <!--nav-->
-    <header class="mb-5">
-        <nav class="navbar navbar-expand-lg bg-light">
+    <header class="">
+        <nav class="navbar navbar-expand-lg">
             <div class="container">
-                <a class="navbar-brand" href="#">Zaimoku Taller</a>
+                <a class="navbar-brand h3" href="#">Zaimoku Taller</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-collapse"
                     aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbar-collapse">
-                    <div class="nav s flex-column flex-sm-row justify-content-end">
-                        <a class="flex-sm-fill text-sm-center nav-link active" aria-current="page" href="#">Inicio</a>
-                        <a class="flex-sm-fill text-sm-center nav-link" href="#">Productos</a>
-                        <a class="flex-sm-fill text-sm-center nav-link" href="#">Nosotros</a>
+                    <div class="nav mt-2 flex-column flex-sm-row justify-content-end">
+                        <a class="flex-sm-fill text-sm-center rounded-pill ms-2 me-2 nav-link active"
+                            aria-current="page" href="#">Inicio</a>
+                        <a class="flex-sm-fill text-sm-center rounded-pill ms-2 me-2 nav-link" href="#">Productos</a>
+                        <a class="flex-sm-fill text-sm-center rounded-pill ms-2 me-2 nav-link" href="#">Nosotros</a>
                     </div>
 
                 </div>
@@ -41,11 +43,54 @@
     </header>
     <!--nav-->
     <main>
-        <section class="container">
-            <h1>Zaimoku taller De Madera</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis eos dolore fugit debitis labore,
-                ratione rem maxime temporibus quasi id, corporis, illo culpa suscipit! Perferendis voluptates voluptatum
-                laboriosam minus ab!</p>
+        <section class="container-fluid">
+            <h2 class="invisible position-absolute">no se ve</h2>
+            <div class="row">
+                <!--cuadro 1-->
+                <div class="col-12 col-sm-6 p-0 no-ver-movil">
+                    <img class="img-fluid" src="assets/img/repisa.jpg" alt="textura de madera">
+                </div>
+                <!--cuadro 1-->
+                <!--cuadro 2-->
+                <div class="col-12 col-sm-6 tarjeta">
+                    <div class="m-2 mt-3">
+                        <h1>Taller De Madera</h1>
+                        <p class="h5">Zaimoku Taller es una tienda especializada en artículos de madera. Tenemos una
+                            amplia gama de artículos, desde letreros, repisas y diversos artículos para el hogar. Todos
+                            nuestros productos están hechos de madera de alta calidad y nos enorgullecemos de nuestra
+                            artesanía. Creemos que la madera es un material con una belleza y un carácter únicos, y nos
+                            esforzamos por sacar lo mejor de cada pieza que creamos. Esperamos que nuestros productos le
+                            traigan alegría y satisfacción durante muchos años. <span>¡Gracias por tu interés en Zaimoku
+                                Taller!</span></p>
+                    </div>
+                </div>
+                <!--cuadro 2-->
+            </div>
+        </section>
+        <section class="mt-3 container text-center">
+            <h2>Algunos de Nuestros Productos</h2>
+            <div class="row">
+                <div class="col-12 col-sm-3">
+                    <div class="card">
+                        <img class="card-img" src="assets/img/letrero-1.jpg" alt="letrero de madera simple">
+                    </div>
+                </div>
+                <div class="col-12 col-sm-3">
+                    <div class="card">
+                        <img class="card-img" src="assets/img/letrero-2.jpg" alt="letrero de madera simple">
+                    </div>
+                </div>
+                <div class="col-12 col-sm-3">
+                    <div class="card">
+                        <img class="card-img" src="assets/img/tabla.jpg" alt="letrero de madera simple">
+                    </div>
+                </div>
+                <div class="col-12 col-sm-3">
+                    <div class="card">
+                        <img class="card-img" src="assets/img/tabla-3.jpg" alt="letrero de madera simple">
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
     <footer>

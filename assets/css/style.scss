@@ -1,0 +1,186 @@
+/*variables*/
+$tipografia-proyecto: 'Roboto', sans-serif;
+$logo-proyecto:'Architects Daughter', cursive;
+$fondo-proyecto: #FFFFFF;
+$color-principal-proyecto: #272640;
+$color-secundario-proyecto: #BFB093;
+$letras-proyecto: #261E17;
+$letras-secundarias-proyecto: #8C715A;
+/*variables*/
+
+/*mixins*/
+@mixin heading-1 {
+    font-family: $tipografia-proyecto;
+    font-size: 48px;
+    line-height: 58px;
+    font-weight: bold;
+    letter-spacing: 0px;
+}
+
+@mixin heading-2 {
+    font-family: $tipografia-proyecto;
+    font-size: 40px;
+    line-height: 49px;
+    font-weight: bold;
+    letter-spacing: 0px;
+}
+
+@mixin heading-3 {
+    font-family: $tipografia-proyecto;
+    font-size: 32px;
+    line-height: 39px;
+    font-weight: bold;
+    letter-spacing: 0px;
+}
+
+@mixin heading-4 {
+    font-family: $tipografia-proyecto;
+    font-size: 28px;
+    line-height: 34px;
+    font-weight: bold;
+    letter-spacing: 0px;
+}
+
+@mixin heading-5 {
+    font-family: $tipografia-proyecto;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: bold;
+    letter-spacing: 0px;
+}
+
+@mixin heading-6 {
+    font-family: $tipografia-proyecto;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: bold;
+    letter-spacing: 0px;
+}
+
+@mixin parrafo {
+    font-family: $tipografia-proyecto;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 400;
+    letter-spacing: 0px;
+}
+
+@mixin enlace {
+    color: $color-secundario-proyecto;
+    font-family: $tipografia-proyecto;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+    letter-spacing: 0px;
+}
+
+/*mixins*/
+
+/*tamaño fuentes*/
+h1 {
+    @include heading-1;
+}
+
+.h1 {
+    @include heading-1;
+}
+
+h2 {
+    @include heading-2;
+}
+
+.h2 {
+    @include heading-2;
+}
+
+h3 {
+    @include heading-3;
+}
+
+.h3 {
+    @include heading-3;
+}
+
+h4 {
+    @include heading-4;
+}
+
+.h4 {
+    @include heading-4;
+}
+
+h5 {
+    @include heading-5;
+}
+
+.h5 {
+    @include heading-5;
+}
+
+h6 {
+    @include heading-6;
+}
+
+.h6 {
+    @include heading-6;
+}
+
+p {
+    @include parrafo;
+}
+
+a {
+    @include enlace;
+}
+
+a:hover {
+    color: $letras-secundarias-proyecto;
+}
+
+/*tamaño fuentes*/
+body{
+    background-color: $fondo-proyecto;
+    color: $letras-proyecto;
+}
+header{
+    .navbar-brand{
+        font-family: $logo-proyecto;
+        color: $color-secundario-proyecto;
+    }
+    .navbar-brand:hover{
+        color: $letras-secundarias-proyecto;
+    }
+    color: $color-secundario-proyecto;
+    background-color: $color-principal-proyecto;
+    .nav-link{
+        color: $color-secundario-proyecto;
+    }
+    .nav-link:hover{
+        background-color: $color-secundario-proyecto;
+        color: $letras-proyecto;
+    }
+    .active{
+        color: $letras-proyecto;
+        background-color: $color-secundario-proyecto !important;
+    }
+}
+.tarjeta{
+    background-color: $color-secundario-proyecto;
+    span{
+        color: $color-principal-proyecto;
+    }
+}
+@media (max-width: 768px) {
+    .no-ver-movil {
+        visibility: hidden;
+        position: absolute;
+    }
+
+    .ver-movil {
+        visibility: visible;
+        position: relative;
+    }
+    .tarjeta{
+        background-color: $fondo-proyecto;
+    }
+}

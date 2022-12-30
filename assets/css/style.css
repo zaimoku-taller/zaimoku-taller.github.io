@@ -1,3 +1,176 @@
+@charset "UTF-8";
+/*variables*/
+/*variables*/
+/*mixins*/
+/*mixins*/
+/*tamaño fuentes*/
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 48px;
+  line-height: 58px;
+  font-weight: bold;
+  letter-spacing: 0px;
+}
 
+.h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 48px;
+  line-height: 58px;
+  font-weight: bold;
+  letter-spacing: 0px;
+}
+
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 40px;
+  line-height: 49px;
+  font-weight: bold;
+  letter-spacing: 0px;
+}
+
+.h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 40px;
+  line-height: 49px;
+  font-weight: bold;
+  letter-spacing: 0px;
+}
+
+h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 32px;
+  line-height: 39px;
+  font-weight: bold;
+  letter-spacing: 0px;
+}
+
+.h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 32px;
+  line-height: 39px;
+  font-weight: bold;
+  letter-spacing: 0px;
+}
+
+h4 {
+  font-family: "Roboto", sans-serif;
+  font-size: 28px;
+  line-height: 34px;
+  font-weight: bold;
+  letter-spacing: 0px;
+}
+
+.h4 {
+  font-family: "Roboto", sans-serif;
+  font-size: 28px;
+  line-height: 34px;
+  font-weight: bold;
+  letter-spacing: 0px;
+}
+
+h5 {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: bold;
+  letter-spacing: 0px;
+}
+
+.h5 {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: bold;
+  letter-spacing: 0px;
+}
+
+h6 {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: bold;
+  letter-spacing: 0px;
+}
+
+.h6 {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: bold;
+  letter-spacing: 0px;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
+  letter-spacing: 0px;
+}
+
+a {
+  color: #BFB093;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  letter-spacing: 0px;
+}
+
+a:hover {
+  color: #8C715A;
+}
+
+/*tamaño fuentes*/
+body {
+  background-color: #FFFFFF;
+  color: #261E17;
+}
+
+header {
+  color: #BFB093;
+  background-color: #272640;
+}
+header .navbar-brand {
+  font-family: "Architects Daughter", cursive;
+  color: #BFB093;
+}
+header .navbar-brand:hover {
+  color: #8C715A;
+}
+header .nav-link {
+  color: #BFB093;
+}
+header .nav-link:hover {
+  background-color: #BFB093;
+  color: #261E17;
+}
+header .active {
+  color: #261E17;
+  background-color: #BFB093 !important;
+}
+
+.tarjeta {
+  background-color: #BFB093;
+}
+.tarjeta span {
+  color: #272640;
+}
+
+@media (max-width: 768px) {
+  .no-ver-movil {
+    visibility: hidden;
+    position: absolute;
+  }
+
+  .ver-movil {
+    visibility: visible;
+    position: relative;
+  }
+
+  .tarjeta {
+    background-color: #FFFFFF;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
