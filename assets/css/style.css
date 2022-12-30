@@ -109,7 +109,7 @@ p {
 }
 
 a {
-  color: #BFB093;
+  color: #bfb093;
   font-family: "Roboto", sans-serif;
   font-size: 12px;
   line-height: 16px;
@@ -118,43 +118,96 @@ a {
 }
 
 a:hover {
-  color: #8C715A;
+  color: #8c715a;
 }
 
 /*tamaño fuentes*/
 body {
-  background-color: #FFFFFF;
-  color: #261E17;
+  background-color: #ffffff;
+  color: #261e17;
 }
 
 header {
-  color: #BFB093;
+  color: #bfb093;
   background-color: #272640;
 }
 header .navbar-brand {
   font-family: "Architects Daughter", cursive;
-  color: #BFB093;
+  color: #bfb093;
 }
 header .navbar-brand:hover {
-  color: #8C715A;
+  color: #8c715a;
 }
 header .nav-link {
-  color: #BFB093;
+  color: #bfb093;
 }
 header .nav-link:hover {
-  background-color: #BFB093;
-  color: #261E17;
+  background-color: #bfb093;
+  color: #261e17;
 }
 header .active {
-  color: #261E17;
-  background-color: #BFB093 !important;
+  color: #261e17;
+  background-color: #bfb093 !important;
 }
 
 .tarjeta {
-  background-color: #BFB093;
+  background-color: #bfb093;
 }
 .tarjeta span {
   color: #272640;
+}
+
+.btn-primary {
+  color: #8c715a;
+  background-color: #bfb093;
+  border: none;
+}
+
+.btn-primary:hover {
+  color: #8c715a;
+  background-color: #261e17;
+}
+
+.btn-secondary {
+  color: #bfb093;
+  background-color: #272640;
+  border: none;
+}
+
+.btn-secondary:hover {
+  color: #8c715a;
+  background-color: #261e17;
+}
+
+.ver-movil {
+  visibility: hidden;
+  position: absolute;
+}
+
+.no-ver-movil {
+  visibility: visible;
+  position: relative;
+}
+
+footer {
+  background-color: #8c715a;
+}
+footer .fin {
+  background-color: #261e17;
+  color: #bfb093;
+}
+
+.navbar-toggler {
+  border-color: #bfb093;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(191, 176, 147)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.nosotros {
+  background-color: #272640;
+  color: #ffffff;
 }
 
 @media (max-width: 768px) {
@@ -169,7 +222,7 @@ header .active {
   }
 
   .tarjeta {
-    background-color: #FFFFFF;
+    background-color: #ffffff;
   }
 }
 
