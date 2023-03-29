@@ -1,59 +1,5 @@
-<!doctype html>
-<html lang="es">
-
-<head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-S44HR9582L"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-S44HR9582L');
-    </script>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Productos | Zaimoku Taller</title>
-    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/logo.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
-    <script src="https://kit.fontawesome.com/8dcbdfedb3.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" media="(max-width: 768px)" href="assets/css/style.css">
-    <script src="https://cdn2.woxo.tech/a.js#63af12b9936b63ce68793c76" async data-usrc>
-    </script>
-</head>
-
-<body>
-    <!--Escribir aquí-->
-    <!--nav-->
-    <header>
-        <nav class="navbar navbar-expand-lg">
-            <div class="container">
-                <a class="navbar-brand h3" href="index.html"><img src="assets/img/logo-hd.png" width="30" alt="logo">
-                    Zaimoku Taller</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-collapse"
-                    aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbar-collapse">
-                    <div class="nav mt-2 flex-column flex-sm-row justify-content-end">
-                        <a class="flex-sm-fill text-sm-center rounded-pill ms-2 me-2 nav-link " aria-current="page"
-                            href="index.html">Inicio</a>
-                        <a class="flex-sm-fill text-sm-center rounded-pill ms-2 me-2 nav-link active"
-                            href="productos.html">Productos</a>
-                    </div>
-
-                </div>
-            </div>
-        </nav>
-    </header>
-    <!--nav-->
+<?php $ubicacion='productos';?>
+<?php include('cabecera.php')?>
     <main>
         <!--Letrero 1-->
         <div class="no-ver-movil p-0">
@@ -259,26 +205,4 @@
         </div>
         <!--móvil-->
     </main>
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="no-ver-movil col-6 col-sm-6 d-flex justify-content-center align-items-center">
-                    <img class="col-3 col-sm-6 no-ver-movil" src="assets/img/logo-hd.png" alt="">
-                </div>
-
-                <div class="col-12 col-sm-6">
-                    <div data-mc-src="6a362373-4603-4849-9b21-338330f28f8b#null"></div>
-                </div>
-            </div>
-        </div>
-        <div class="fin text-center">
-            <p class="m-0">© Derechos reservados Zaimoku Taller</p>
-        </div>
-    </footer>
-    <!--Escribir aquí-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-        crossorigin="anonymous"></script>
-</body>
-
-</html>
+    <?php include('pie.php')?>
