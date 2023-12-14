@@ -105,4 +105,19 @@
 .no-scroll {
   overflow: hidden; }
 
+.btn {
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+  transition: all 0.7s ease-in-out;
+  -webkit-transition: all 0.7s ease-in-out;
+  -moz-transition: all 0.7s ease-in-out;
+  -ms-transition: all 0.7s ease-in-out;
+  -o-transition: all 0.7s ease-in-out; }
+  .btn:hover {
+    background-color: tomato;
+    color: #fff; }
+
 /*# sourceMappingURL=style.css.map */
