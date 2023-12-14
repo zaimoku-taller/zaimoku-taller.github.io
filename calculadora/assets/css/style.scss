@@ -8,6 +8,11 @@ $color-2: tomato;
 /*tema claro */
 .tema-claro {
   background-color: cornflowerblue;
+  background-image: url("../img/sol.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 40%;
+  background-attachment: fixed;
 }
 
 .tema-claro .text-tema {
@@ -28,7 +33,7 @@ $color-2: tomato;
 }
 
 .tema-claro .bg-tema {
-  background-color:rgb(26, 11, 11);
+  background-color: rgb(26, 11, 11);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(6.1px);

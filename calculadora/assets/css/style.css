@@ -4,7 +4,12 @@
 /*mixins*/
 /*tema claro */
 .tema-claro {
-  background-color: cornflowerblue; }
+  background-color: cornflowerblue;
+  background-image: url("../img/sol.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 40%;
+  background-attachment: fixed; }
 
 .tema-claro .text-tema {
   color: #06133d; }
