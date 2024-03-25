@@ -1,0 +1,66 @@
+---
+import Card from "../components/Card.astro";
+import {Image} from "astro:assets";
+import Anchor from "../components/Anchor.astro";
+import Layout from "../layouts/Layout.astro";
+import {FaWhatsapp} from "react-icons/fa6";
+import {imgs} from "../data/imgs";
+---
+
+<Layout title="Inicio | Zaimoku Taller">
+    <div
+        id="inicio"
+        class="md:h-[calc(100vh-9rem)] flex justify-start items-end my-2 mb-6 p-3"
+    >
+        <div class="w-10/12 flex flex-col gap-2">
+            <h1>Taller De Madera</h1>
+            <p>
+                Zaimoku Taller es una <span class="text-orange-500"
+                    >tienda especializada</span
+                > en artículos de madera. Tenemos una amplia gama de artículos, desde
+                letreros, repisas y diversos artículos para el hogar.
+            </p>
+            <a
+                class="w-max px-3 py-1 uppercase bg-orange-800 hover:bg-orange-500 hover:scale-125 hover:translate-x-3 transition rounded-md font-semibold flex justify-center items-center gap-2"
+                href="https://wa.me/+56981861936/?text=Hola,%20me%20interesa%20un%20producto..."
+                >contactanos <FaWhatsapp />
+            </a>
+        </div>
+    </div>
+    <div class="my-10">
+        <Card>
+            <div
+                class="flex flex-col justify-between items-center gap-2 text-center"
+            >
+                <h2 class="text-orange-500">sobre nosotros</h2>
+                <p>
+                    Zaimoku Taller es un taller de madera con 3 años de
+                    experiencia en el mercado. Nuestro objetivo es ofrecer
+                    productos de calidad a precios competitivos, utilizando la
+                    madera como material base. Contamos con un equipo de
+                    profesionales altamente cualificados que nos permiten
+                    ofrecer un servicio integral a nuestros clientes.
+                </p>
+            </div>
+        </Card>
+    </div>
+    <div class="flex flex-col justify-between items-center gap-2 my-10">
+        <h2>algunos de nuestros productos</h2>
+        <div class="my-2">
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-2">
+                {
+                    imgs.map((data) => (
+                        <Image
+                            class="object-contain sm:hover:scale-125 sm:hover:z-10 sm:hover:rotate-2 transition"
+                            src={data.url}
+                            alt={data.alt}
+                        />
+                    ))
+                }
+            </div>
+            <div class="flex justify-center items-center my-2">
+                <Anchor href="/productos">ver mas productos</Anchor>
+            </div>
+        </div>
+    </div>
+</Layout>

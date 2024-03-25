@@ -1,0 +1,56 @@
+---
+import {FaInstagram, FaWhatsapp} from "react-icons/fa6";
+import {redes} from "../data/redes";
+const date = new Date();
+const year = date.getFullYear();
+---
+
+<footer class="md:w-7/12 sm:w-10/12 px-6 sm:mx-auto mt-12 mb-2">
+    <div class="grid grid-cols-1 sm:grid-cols-2">
+        <div class="block sm:hidden">
+            <div class="flex justify-around items-center gap-2">
+                {
+                    redes.map((data) => (
+                        <a
+                            class="px-2 py-1 bg-orange-800 hover:bg-orange-500 hover:scale-110 hover:rotate-1 rounded-md flex justify-center items-center gap-2 transition "
+                            href={data.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            {data.icon === "insta" ? (
+                                <FaInstagram />
+                            ) : (
+                                <FaWhatsapp />
+                            )}{" "}
+                            {data.text}
+                        </a>
+                    ))
+                }
+            </div>
+        </div>
+        <div class="flex md:block justify-center items-center">
+            <span>© Zaimoku Taller {year}</span>
+        </div>
+        <div class="hidden sm:block">
+            <div class="flex justify-around items-center gap-2">
+                {
+                    redes.map((data) => (
+                        <a
+                            class="px-2 py-1 bg-orange-800 hover:bg-orange-500 hover:scale-110 hover:rotate-1 rounded-md flex justify-center items-center gap-2 transition "
+                            href={data.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            {data.icon === "insta" ? (
+                                <FaInstagram />
+                            ) : (
+                                <FaWhatsapp />
+                            )}{" "}
+                            {data.text}
+                        </a>
+                    ))
+                }
+            </div>
+        </div>
+    </div>
+</footer>
